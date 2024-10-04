@@ -1,47 +1,43 @@
-# Notasi-Kalimat-Deskriptif-pada-algoritma-
-Tugas Algoritma dan pemrograman 
+# Algoritma Pencarian Linear
 
-# Algoritma Pencarian Linear: Mencari Nama dengan Santai
+## Deskripsi
 
-## Selamat datang!
+Jadi, algoritma ini digunakan buat mencari nama teman di dalam daftar. Misalnya, kita mau tahu apakah teman kita yang bernama "Doni" ada di dalam daftar mahasiswa. Kita bakal lihat satu-satu namanya, dan kalau ketemu, kita bilang "Oh, ini dia!" Tapi kalau sudah lihat semua nama dan ternyata tidak ada, kita bilang "Eh, tidak ada di sini."
 
-Di sini kita bakal ngobrolin tentang algoritma pencarian linear. Kalian tahu kan, kadang kita butuh cari nama teman di daftar. Nah, algoritma ini adalah cara simpel buat nyari nama dalam daftar mahasiswa. Jadi, kita akan membandingkan setiap nama satu per satu. Kalau ketemu, kita bakal senang! Tapi kalau enggak, ya sudah, kita bisa move on.
+## Langkah-langkah Algoritma
 
-## Langkah-langkah Pencarian
+1. **Mulai**: Siapkan sebuah variabel yang kita sebut `ditemukan`, awalnya kita bilang `False`, artinya kita belum menemukan apa-apa.
+2. **Cek satu-satu**: Lihat satu per satu nama di daftar mahasiswa.
+   - Jika nama yang kita cari sama dengan nama yang ada, ubah `ditemukan` jadi `True` dan berhenti cari.
+3. **Cek hasilnya**:
+   - Kalau `ditemukan` jadi `True`, kita bilang "Mahasiswa [nama] ada di daftar!"
+   - Kalau masih `False`, berarti kita belum menemukan namanya, jadi kita bilang "Mahasiswa [nama] tidak ada di daftar."
 
-1. **Persiapan**: Kita mulai dengan ngatur sebuah variabel yang kita sebut `ditemukan`. Awalnya kita anggap, "Eh, nama ini belum ketemu!"
-2. **Mulai Cek**: Kita bakal cek satu per satu nama di daftar. 
-   - Jika kita menemukan nama yang dicari, kita bilang, "Yeay! Ketemu!" dan langsung berhenti cek.
-3. **Cek Hasil**:
-   - Kalau `ditemukan` jadi `True`, kita kasih tahu, "Nama ini ada di daftar, lho!"
-   - Tapi, kalau sampai akhir nama di daftar dan tetap enggak ketemu, kita bilang, "Maaf, nama ini nggak ada."
+## Contoh Kode
 
-## Kode yang Bisa Dipakai
-
-```python
-# Algoritma Pencarian Linear: Nyari Nama Mahasiswa dengan Santai
+# Algoritma Pencarian Linear: Mencari Nama Mahasiswa dalam Daftar Acak
 
 def cari_mahasiswa(daftar_mahasiswa, nama):
     """
-    Fungsi ini buat nyari nama mahasiswa di daftar.
+    Fungsi untuk mencari mahasiswa dalam daftar kelas.
 
     Argumen:
-    daftar_mahasiswa -- Daftar nama mahasiswa
-    nama -- Nama yang mau dicari
+    daftar_mahasiswa -- List yang berisi nama-nama mahasiswa
+    nama -- Nama mahasiswa yang ingin dicari
 
-    Kembalikan:
-    Pesan apakah mahasiswa ditemukan atau tidak.
+    Mengembalikan:
+    String hasil apakah mahasiswa ditemukan atau tidak.
     """
-    # Set variabel ditemukan jadi False
+    # Mulai dengan bilang belum ketemu
     ditemukan = False
 
-    # Proses pencarian nama mahasiswa
+    # Proses pencarian nama mahasiswa dalam daftar_mahasiswa
     for mahasiswa in daftar_mahasiswa:
         if mahasiswa == nama:
             ditemukan = True
-            break  # Berhenti cek jika nama ketemu
+            break  # Hentikan pencarian kalau sudah ketemu
     
-    # Kembalikan hasil pencarian
+    # Mengembalikan hasil pencarian
     if ditemukan:
         return f"Mahasiswa {nama} ditemukan dalam daftar."
     else:
@@ -52,8 +48,8 @@ if __name__ == "__main__":
     # Daftar nama mahasiswa acak
     daftar_mahasiswa = ["Siti", "Rahmat", "Dian", "Fajar", "Tika", "Doni", "Bintang", "Salsa", "Rian", "Anita"]
     
-    # Nama yang mau dicari
-    nama_target = "Doni"  # Bisa ganti dengan nama lain sesuai keinginan
+    # Nama yang akan dicari
+    nama_target = "Doni"  # Nama ini bisa diganti sama nama lain
 
     hasil = cari_mahasiswa(daftar_mahasiswa, nama_target)
     print(hasil)
