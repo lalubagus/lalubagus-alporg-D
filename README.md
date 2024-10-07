@@ -44,7 +44,7 @@ def cari_mahasiswa(daftar_mahasiswa, nama):
         return f"Mahasiswa {nama} tidak ditemukan dalam daftar."
 
 # Contoh penggunaan
-if __name__ == "__main__":
+
     # Daftar nama mahasiswa acak
     daftar_mahasiswa = ["Siti", "Rahmat", "Dian", "Fajar", "Tika", "Doni", "Bintang", "Salsa", "Rian", "Anita"]
     
