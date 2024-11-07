@@ -1,6 +1,6 @@
 # Program Flowchart dengan variabel assigment value
-x = 30
-y = 20
+x = 24
+y = 38
 
 # Menghitung luas
 luas = x * y
