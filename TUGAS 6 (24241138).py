@@ -10,4 +10,4 @@ luas = panjang * lebar
 # Output hasil
 print("nilai lebar adalah:", lebar)
 print("nilai panjang adalah:", panjang)
-print(f"Luas persegi panjang adalah: {luas}")
+print("Luas persegi panjang adalah:", luas)
