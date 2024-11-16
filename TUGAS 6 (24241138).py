@@ -1,4 +1,4 @@
-#modifikasi tugas 2
+# Modifikasi Tugas 2
 
 x = 38
 y = 24
