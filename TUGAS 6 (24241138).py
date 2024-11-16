@@ -1,4 +1,4 @@
-# Menghitung luas persegi panjang
+# Mulai menghitung luas persegi panjang
 
 # Input panjang dan lebar
 lebar = 38
