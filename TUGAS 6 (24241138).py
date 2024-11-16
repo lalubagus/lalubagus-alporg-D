@@ -1,8 +1,8 @@
 # Menghitung luas persegi panjang
 
 # Input panjang dan lebar
-lebar = float(input("Masukkan lebar: "))
-panjang = float(input("Masukkan panjang: "))
+lebar = 38
+panjang = 24
 
 # Proses perhitungan luas
 luas = panjang * lebar
