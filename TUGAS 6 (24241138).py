@@ -1,10 +1,10 @@
-# Mulai menghitung luas persegi panjang
+# Modifikasi Tugas 2
 
 # Input panjang dan lebar
 lebar = 38
 panjang = 24
 
-#hitung panjang lebar
+# Hitung panjang lebar
 luas = panjang * lebar
 
 # Output hasil
